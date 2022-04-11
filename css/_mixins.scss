@@ -5,16 +5,16 @@ $exwide-break: 1800px;
 
 // media query breakpoints
 @mixin break($point) {
-    @if $point == small {
-        @media (min-width: 768px) { @content; }
-    }
-    @else if $point == med {
-        @media (min-width: 992px) { @content; }
-    }
-    @else if $point == wide {
-        @media (min-width: 1200px) { @content; }
-    }
-    @else if $point == exwide {
-        @media (min-width: 1800px) { @content; }
-    }
+  @if $point == small {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $point == med {
+    @media (min-width: 992px) { @content; }
+  }
+  @else if $point == wide {
+    @media (min-width: 1200px) { @content; }
+  }
+  @else if $point == exwide {
+    @media (min-width: 1800px) { @content; }
+  }
 }
